@@ -7,10 +7,53 @@
     <!-- Tailwindcss and DaisyUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary-color': '#179800',
+              }
+            }
+          }
+        }
+      </script>
+      <!-- Font awesome kits -->
+      <script src="https://kit.fontawesome.com/67226b2972.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-          
+          <!--Navbar  -->
+          <nav class="px-4 py-3 lg:px-32 lg:pt-6">
+            <div class="flex justify-between items-center">
+                <img src="images/logo-header.png" alt="">
+                <div class="hidden lg:block">
+                    <ul class="flex space-x-8">
+                        <li><a href="">Product</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="sm:hidden">
+                    <a href="" class="space-y-2">
+                        <div class="h-1 w-8 bg-primary-color"></div>
+                        <div class=" h-1 w-8 bg-primary-color"></div>
+                        <div class="h-1 w-8 bg-primary-color"></div>
+                    </a>
+                </div>
+                <div class="hidden lg:block">
+                    <div class="flex space-x-3 items-center">
+                    
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                         <button class="btn">Login</button>
+                        <button class="btn bg-primary-color">Register</button>
+                    </div>
+                </div>
+            </div>
+          </nav>
+          <div class="h-1 bg-primary-color w-full sm:hidden"></div>
     </header>
     <main>
 
